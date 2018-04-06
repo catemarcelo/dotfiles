@@ -20,6 +20,7 @@ Plug 'justinmk/vim-syntax-extra', { 'for': ['c', 'cpp', 'flex'] }
 Plug 'neomake/neomake'
 
 Plug 'mzlogin/vim-markdown-toc'
+"Plug 'ajorgensen/vim-markdown-toc'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
@@ -116,6 +117,7 @@ set number relativenumber " set hybrid line numbers
 set showmatch             " set show matching parenthesis
 set cursorline            " underline the current line, for quick orientation
 "set cursorcolumn
+set colorcolumn=120
 set title                 " change the terminal's title
 set autoread              " read when a file is changed from the outside
 set smartcase             " when searching try to be smart about cases
