@@ -162,4 +162,4 @@ map <C-\> :NERDTreeToggle<CR>
 syntax enable             " enable syntax highlighting
 syntax on
 
-"colorscheme dracula
+colorscheme dracula
