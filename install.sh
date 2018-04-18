@@ -1,19 +1,5 @@
 #!/bin/bash
 
-PKG=(
-  curl
-  pandoc
-  texlive-full
-  wget
-)
-
-sudo apt update && sudo apt upgrade -y
-
-for pkg in "${PKG[@]}"
-do
-  sudo apt install $pkg -y
-done
-
 SAVED_DIR=$PWD
 
 cd ~/.dotfiles
