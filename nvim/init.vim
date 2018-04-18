@@ -11,7 +11,6 @@ endif
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'sheerun/vim-polyglot'
 Plug 'honza/vim-snippets'
 Plug 'prettier/prettier'
@@ -39,7 +38,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'ryanoasis/vim-devicons'
 
 " List ends here. Plugins become visible to Vim after this call.
@@ -83,13 +82,6 @@ let g:vmt_auto_update_on_save = 0
 let g:prettier#config#print_width = 40 " max line length that prettier will wrap on
 let g:prettier#config#tab_width = 2 " number of spaces per indentation level
 let g:prettier#config#use_tabs = 'false' " use tabs over spaces
-
-""" gruvbox (theme)
-let g:gruvbox_bold = 1
-let g:gruvbox_underline = 1
-"let g:gruvbox_italic = 1
-let g:gruvbox_contrast_dark = 'medium'
-let g:gruvbox_italicize_comments = 1
 
 let g:seiya_auto_enable=1
 let g:seiya_target_groups = ['guibg']
@@ -170,5 +162,4 @@ map <C-\> :NERDTreeToggle<CR>
 syntax enable             " enable syntax highlighting
 syntax on
 
-set background=dark
-colorscheme gruvbox
+"colorscheme dracula
